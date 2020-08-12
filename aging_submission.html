@@ -1,0 +1,164 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+<meta name="format-detection" content="telephone=no"> 
+<meta name="viewport" content="width=device-width; initial-scale=1.0; maximum-scale=1.0; user-scalable=no;">
+<meta http-equiv="X-UA-Compatible" content="IE=9; IE=8; IE=7; IE=EDGE" />
+<title>Page title</title>
+<style>
+    @import url('https://fonts.googleapis.com/css?family=Montserrat:200,300,400,500,600,700,800,900&display=swap');/*Calling our web font*/
+    @import url('https://fonts.googleapis.com/css?family=Lato:300,400,700,900&display=swap');
+    /* Some resets and issue fixes */
+    #outlook a { padding:0; }
+    body{ width:100% !important; -webkit-text-size-adjust:100%; -ms-text-size-adjust:100%; margin:0; padding:0; font-family: 'Lato', sans-serif;}     
+    .ReadMsgBody { width: 100%; }
+    .ExternalClass {width:100%;} 
+    .backgroundTable {margin:0 auto; padding:0; width:100%!important;} 
+    table td {border-collapse: collapse;}
+    .ExternalClass * {line-height: 115%;} 
+    a{
+        text-decoration: none;
+    }
+    ul{
+        padding: 0px;
+    }
+    li{
+        margin: 0;
+    } 
+    *[class="text_bold"]{font-weight: 700;}
+    .text_bold{font-weight: 700;} 
+    /* End reset */
+    
+    /* These are our tablet/medium screen media queries */
+    @media screen and (max-width: 594px){
+        /* Display block allows us to stack elements */                      
+        *[class="mobile-column"] {display: block;} 
+
+        /* Some more stacking elements */
+        *[class="mob-column"] {float: none !important; width: 100% !important;}     
+
+        /* Hide stuff */
+        *[class="hide"] {display:none !important;}          
+
+        /* This sets elements to 100% width and fixes the height issues too, a god send */
+        *[class="100p"] {width:100% !important; height:auto !important;}                    
+
+        /* For the 2x2 stack */         
+        *[class="condensed"] {padding-bottom:40px !important; display: block;}
+
+        /* Centers content on mobile */
+        *[class="center"] {text-align:center !important; width:100% !important; height:auto !important;}            
+
+        /* 100percent width section with 20px padding */
+        *[class="100pad"] {width:100% !important; padding:20px !important;} 
+
+        /* 100percent width section with 20px padding left & right */
+        *[class="100padleftright"] {width:100% !important; padding:0 20px 0 20px !important;} 
+
+        /* 100percent width section with 20px padding top & bottom */
+        *[class="100padtopbottom"] {width:100% !important; padding:20px 0px 20px 0px;} 
+
+        /* 100percent width button */
+        *[class="btn-center"]{width: 100%; margin-bottom: 10px;}
+
+        /* description padding */
+        *[class="descp"]{padding: 30px 20px !important;}
+
+        /* bottom description padding */
+        *[class="bottom_descp"]{padding: 30px 20px 0px!important;}
+
+        /* description Link padding*/
+        *[class="link_descp"]{padding: 0px 30px 10px !important;}
+        *[class="mob-visible"]{display: block !important;}
+    }
+
+    @media screen and (max-width: 320px){
+        *[class="width_100"]{width: 100% !important;}  
+    }
+
+</style>
+
+
+</head>
+
+<body style="padding:0; margin:0">
+
+<table border="0" cellpadding="0" cellspacing="0" style="margin: 0; padding: 0; font-size: 13px; color: #333;" width="100%">
+    <tr>
+        <td align="center" valign="top">
+            <table border="0" cellpadding="0" cellspacing="0" style="margin: 0; padding: 0; border: 1px solid #E0E0E0;" width="594" class="100p">
+                <tr>
+                    <td style="background: url(images/header-bg.png); background-repeat: no-repeat; height: 56px; padding-top: 15px; padding-left: 21px;">
+                        <img src="images/logo.png" alt="">
+                    </td>
+                </tr>
+                <tr>
+                    <td valign="top" class="100pad" style="padding: 30px 65px 20px;">
+                        <p><span class="text_bold" style="font-weight: 700;"><font style="font-weight: 700;">5 New Claims with Delayed Submission</font></span></p>
+                        <p>Hello [first name] (non-provider) OR Dr. [last name] (provider),</p>
+                        <p>There are 5 new claims, <span class="text_bold" style="font-weight: 700;"><font style="font-weight: 700;">$456.43 in charges</font></span>, which are still not submitted 7 days after their respective service dates. This brings the total aging charges to <span class="text_bold" style="font-weight: 700;"><font style="font-weight: 700;">$1,234.54</font></span> with an average age of {10 days}.</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td style="padding: 0px 50px 30px;" class="100padleftright">
+                    <table class="table_main" style="width: 100% !important; padding: 0px; font-size: 12px; float: left;">
+                        <thead>
+                            <tr>
+                                <th class="title_field" style="padding: 0px 15px;" align="left">Claim ID</th>
+                                <th class="title_field" style="padding: 0px 15px;" align="left">Charges</th>
+                                <th class="title_field" style="padding: 0px 15px;" align="left">Date Of Service</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <!----{% for action_item in action_items %} -->
+                            <tr>
+                                <td align="left" class="text_field" style="color:#000; padding:10px 15px;font-size:12px;font-weight:300;">
+                                    <a href="#" style="color: #6DCDA6; text-decoration: none; font-weight: bold;"> Claim </a> 
+                                </td>
+                                <td align="left" class="text_field" style="color:#000;padding:10px 15px;font-size:12px;font-weight:300;">
+                                 [Charges]
+                                </td>
+                                <td align="left" class="text_field" style="color:#000;padding:10px 15px;font-size:12px;font-weight:300;">
+                                [Date Of Service]
+                                </td>
+                            </tr>
+                            <!-- {% endfor %} -->
+                        </tbody>
+                    </table>
+                    </td>
+                </tr>
+                <tr>
+                    <td style="padding: 0px 65px 0px;" class="bottom_descp">
+                        <p style="margin: 0px 0px 20px 0px">Please feel free to reach out to your Account Manager with any questions.</p>
+                        <p style="margin: 0px 0px 20px 0px">Take care,<br />The Gentem Team</p>
+                        <hr style="border: 1px solid #E0E0E0">
+                    </td>
+                </tr>
+                <tr>
+                    <td style="padding: 0px 65px 12px 65px; text-align: center;" class="link_descp">
+                        <a href="#" style="text-align: center; color: #6DCDA6; font-size: 15px; font-weight: 700; line-height: 48px; letter-spacing: 1.6px; text-decoration: none; font-family: 'Montserrat', sans-serif;"><font face="'Montserrat', sans-serif" style="color:#6DCDA6;">Questions or Concerns?</font></a>
+                    </td>
+                </tr>
+                <tr>
+                    <td align="center" style="background-color: #E2F5ED; padding: 22px 0px; font-weight: 200; line-height: 28px;">
+                        <img src="images/icon.png" style="width: 55px"alt="" />
+                        <ul style=" list-style: none; font-size: 14px; margin: 20px 0px 0px;">
+                            <li style="display: inline-block; border-right: 1px solid #333; padding: 0px 10px 0px 0px; line-height: 16px; mso-special-format:bullet;">© Gentem 2020</li>
+                            <li style="display: inline-block; border-right: 1px solid #333; padding: 0px 10px 0px 8px; line-height: 16px; mso-special-format:bullet;"><a href="#" style=" color:#333333; text-decoration: none;">contact@gentem.com</a></li>
+                            
+                        </ul>
+                        <ul style=" list-style: none; font-size: 14px; margin:0px;">
+                            <li style="display: inline-block; border-right: 1px solid #333; padding: 0px 10px 0px 8px; line-height: 16px; mso-special-format:bullet;">424-248-7725</li>
+                            <li style="display: inline-block; border-right: 1px solid #333; padding: 0px 10px 0px 8px; line-height: 16px; mso-special-format:bullet;"><a href="#" style=" color:#333333; text-decoration: none;"> Terms of Services</a></li>
+                            <li style="display: inline-block; padding: 0px 0px 0px 8px; mso-special-format:bullet; line-height: 16px"><a href="#" style=" color:#333333; text-decoration: none;"> Privacy Policy</a></li>
+                        </ul>
+                    </td>
+                </tr>
+            </table>
+        </td>
+    </tr>
+</table>
+
+</body>
+</html>
